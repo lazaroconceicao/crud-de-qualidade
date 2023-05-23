@@ -1,1 +1,16 @@
-Daqui a pouco vou almoçar!
+{
+  "todos": [
+    {
+      "id": "7b140e6a-2e15-4228-8529-de7aa66590d7",
+      "date": "2023-05-23T00:39:41.236Z",
+      "content": "Primeira TODO!",
+      "done": false
+    },
+    {
+      "id": "4d4b5757-130b-4406-ba50-94b111f9be57",
+      "date": "2023-05-23T00:39:41.249Z",
+      "content": "ATUALIZADA!",
+      "done": false
+    }
+  ]
+}

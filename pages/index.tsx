@@ -9,7 +9,7 @@ const bg = "/bg.jpeg"; //inside public folder
 export default function Page() {
     return (
       <main>
-        <GlobalStyles themeName="indigo"/>
+        <GlobalStyles themeName="devsoutinho"/>
          <header
            style={{
               backgroundImage: `url('${bg}')`,

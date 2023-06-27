@@ -4,7 +4,7 @@ import { v4 as uuid } from "uuid";
 // const fs = require('fs'); - Common.js
 const DB_FILE_PATH = "./core/db";
 
-console.log("[CRUD]");
+// console.log("[CRUD]");
 
 type UUID = string;
 
@@ -44,7 +44,7 @@ function updateContentById(id: UUID, content: UUID): Todo {
     });
 }
 
-function read(): Array<Todo> {
+export function read(): Array<Todo> {
     const dbString = fs.readFileSync(DB_FILE_PATH, "utf-8");
     const db = JSON.parse(dbString || "{}");
     if (!db.todos) {
@@ -105,16 +105,16 @@ function CLEAR_DB() {
 }
 
 // [SIMULATION]
-CLEAR_DB();
-create("Primeira TODO!");
-const secondTodo = create("Segunda TODO!");
-deleteById(secondTodo.id);
-const thridTodo = create("Terceira TODO!");
-// update(thridTodo.id, {
-//     content: "ATUALIZADA!",
-//     done: true,
-// });
-updateContentById(thridTodo.id, "ATUALIZADA!");
-const todos = read();
-console.log(todos);
-console.log(todos.length);
+// CLEAR_DB();
+// create("Primeira TODO!");
+// const secondTodo = create("Segunda TODO!");
+// deleteById(secondTodo.id);
+// const thridTodo = create("Terceira TODO!");
+// // update(thridTodo.id, {
+// //     content: "ATUALIZADA!",
+// //     done: true,
+// // });
+// updateContentById(thridTodo.id, "ATUALIZADA!");
+// const todos = read();
+// console.log(todos);
+// console.log(todos.length);
